@@ -99,12 +99,13 @@
   --color-pink-darker: #2f011d;
   --color-heading: #ffffff;
   --color-body: #acacac;
-  --color-dark: #060606;
+  --color-dark: #022b40;
   --color-darker: rgba(6, 6, 6, 0.7);
   --color-darkest: rgba(0, 0, 0, 0.3);
   --color-black: #000000;
   --color-blacker: rgba(15, 15, 17, 0);
   --color-blackest: #0f0f11;
+  --color-seablue: #006ba1;    
   --color-border: hsla(0,0%,100%,0.1);
   --color-lessdark: #1e1e1e;
   --color-gray: #65676B;

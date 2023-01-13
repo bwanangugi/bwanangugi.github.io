@@ -29,6 +29,10 @@ nav{
     z-index: 100;
 }
 
+.nav-logo img{
+   height: 40px;
+}
+
 label.logo {
     color: #F9AB10;
     font-size: 2rem;
@@ -339,6 +343,7 @@ label.logo {
     font-size: 1.1rem;
     color: #fff;
     border: none;
+    cursor: pointer;
  }
 
  

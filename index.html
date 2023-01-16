@@ -9,18 +9,21 @@
     <script src="https://kit.fontawesome.com/4d792c5e38.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
     
         <nav>
             <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <!-- <i class="fa-solid fa-bars"></i> -->
-            </label>
-            <!-- <label class="logo">Swap X</label>-->
-            </label>
-                <label class="logo">Swap.Africa</label>
-            <ul>
+            <!-- <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>  -->
+            
+            <div class="nav-logo">
+                <img src="assets\images\brij-X-_Logo.png" alt="">
+            </div>
             <ul>
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">How To</a></li>
@@ -30,20 +33,24 @@
             </ul>
         </nav>
     <div class="header">
-        <div class="textbox">
-            <h1 class="header__title">
-                Empowering African users and businesses to seamlessly transact in their local currency of choice.
-            </h1>
-            <p class="header__text">
-                BrijX gives you an easy tap-tap-go experience on mobile and web to swap multiple African currencies
-            </p>
-            <button class="header__btn">
-                <a href="https://play.google.com/store/apps/details?id=com.brij.android&hl=en&gl=US">Swap Now</a>
-            </button>
-            <a href="">Learn More</a>
-        </div>
-         <div class="header__pic">
-            <img src="assets\images\header.png" alt="header-image">
+        <div class="header-container">
+            <div class="textbox">
+                <h1 class="header__title">
+                    Empowering African users and businesses to seamlessly transact in their local currency of choice.
+                </h1>
+                <p class="header__text">
+                    BrijX gives you an easy tap-tap-go experience on mobile and web to swap multiple African currencies
+                </p>
+                <div class="header-buttons">
+                    <button class="header__btn">
+                        <a href="https://play.google.com/store/apps/details?id=com.brij.android&hl=en&gl=US">Swap Now</a>
+                    </button>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <div class="header__pic">
+                <img src="assets\images\header.png" alt="header-image">
+            </div>
         </div>
 
     </div>
@@ -77,22 +84,50 @@
     
 
     <main>
-        <div class="showcase-titles">
-            <div class="small-title">
-                <h3>How it Works</h3>
-            </div>
-            <div class="large-title">
-                <h2>Swap currencies with a simple Tap-Tap-Go!</h2>
-            </div>
-            <div class="title-content">
-                <p>
-                    Swapping multiple African currencies has never been easier!<br>
-                    Fire up the Brij App and Tap-Tap-Go!
-                </p>
-            </div>
-        </div>
+        <div class="showcase-container">
 
-        <div class="owl-carousel owl-theme">
+            <div class="showcase-titles">
+                <div class="small-title">
+                    <h3>How it Works</h3>
+                </div>
+                <div class="large-title">
+                    <h2>Swap currencies with a simple Tap-Tap-Go!</h2>
+                </div>
+                <div class="title-content">
+                    <p>
+                        Swapping multiple African currencies has never been easier!<br>
+                        Fire up the Brij App and Tap-Tap-Go!
+                    </p>
+                </div>
+            </div>
+
+            <div class="screens-container">
+                <div class="screens">
+                    <img src="assets/images/screen5.png" alt="">
+                    <h3>Step 1</h3>
+                    <p>
+                        Select the appropriate transaction wallet based on the by the country you are in.
+                    </p>
+                </div>
+                <div class="screens">
+                    <img src="assets/images/screen2.png" alt="">
+                    <h3>Step 2</h3>
+                    <p>
+                        Users have control over their trades, giving them the ability to create their own offers. 
+                    </p>
+                </div>
+                <div class="screens">
+                    <img src="assets/images/screen6.png" alt="">
+                    <h3>Step 3</h3>
+                    <p>
+                        A swap is successful through the acceptance of offers between users in different jurisdictions.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- <div class="owl-carousel owl-theme">
             
             
             <div class="app-showcase">
@@ -122,15 +157,10 @@
             </div>
                 
             
-        </div>
+        </div> -->
           
 
-        <div class="assure-statement">
-            <p>
-                BrijX uses bank-grade security and bank-domiciled<br>escrow/trust accounts
-                to guarantee transactional safety.
-            </p>
-        </div>
+        
 
         <div class="download-tabs">
             <div class="download-title">
@@ -191,6 +221,7 @@
                 <img src=assets\images\currency.png alt="currency-image">
             </div>
         </div>
+
         <div class="why-us post-2">    
             <div class="testimonials__pic">
                 <img src=assets\images\access.png alt="header-image">
@@ -216,6 +247,7 @@
                 </p>
             </div>
         </div>
+
         <div class="why-us post-3">
             <div class="testimonials">
                 <h1 class="header__title">
@@ -271,23 +303,31 @@
             </div>
 
         </div>
-        <div class="our-partners">
-            <img src="assets\images\partners-5.png" alt="">
+        <div class="partners-container">
+            <div class="our-partners">
+                <img src="assets\images\partners-5.png" alt="">
+            </div>
+            <div class="partner-call">
+                <a href="">Click here to Join our Partner Network</a>
+            </div>
         </div>
-        <div class="partner-call">
-            <a href="">Click here to Join our Partner Network</a>
-        </div>
+
         <footer>
             <div class="container">
+
+                <div class="footer-logo">
+                    <img src="assets\images\brij-X-_Logo-white.png" alt="">
+                </div>
+                
                 <div class="row-f">
                     <!--1st footer col-->
                     <div class="footer-col">
                         <h4>Products</h4>
                         <ul>
-                            <li><a href="">Pay & Request</a></li>
-                            <li><a href=""></a>Pay with Brij</li>
+                            
+                            <li><a href=""></a>Paybills</li>
+                            <li><a href=""></a>Send & request</li>
                             <li><a href=""></a>Merchants</li>
-                            <li><a href=""></a>Paybills.Africa</li>
                         </ul>
                     </div>
                     <!--2nd footer col-->
@@ -323,6 +363,12 @@
                     <!--5th footer col-->
                     <div class="footer-col">
                         <h4>Newsletter</h4>
+                        <p>
+                        Get regular product
+                        features, and company
+                        updates, delivered in
+                        your inbox.
+                        </p>
                         <form action="">
                             <input type="text" placeholder="Your Name" class="inputname">
                             <input type="text" placeholder="Your email" class="inputemail">
@@ -347,7 +393,7 @@
     <script>
         $('.owl-carousel').owlCarousel({
             loop:true,
-            margin:20,
+            margin:10,
             responsiveClass:true,
             responsive:{
                 0:{

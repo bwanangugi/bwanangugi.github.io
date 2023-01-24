@@ -4,7 +4,8 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-family: montserrat, sans-serif;
+    font-family: poppins, sans-serif;
+    
     
 }
 
@@ -13,10 +14,10 @@ main{
     height: 100vh;
 }
 
-.header{
+.header-container{
     display: flex;
-    width: 100%;
-    height: 80vh;
+    max-width: 1400px;
+    margin: auto;
     background: #fff;
     padding: 0 8%;
     padding-bottom: 2rem;
@@ -25,7 +26,7 @@ main{
     
 }
 
-.header-container{
+.header{
    width: 90%;
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -36,49 +37,43 @@ main{
 
 .nav-container{
    display: grid;
+   max-width: 1400px;
+   margin: auto;
+   background-color: #f5f5f5;
+   padding-bottom: 0.5rem;
 }
 
 nav{
-    max-height: 5rem;
+    max-height: 4rem;
     width: 100%;
     padding: 0 8%;
-    padding-bottom: 1rem;
     z-index: 100;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 
 .nav-logo{
-   padding-left: 50px;
-   padding-top: 5px;
+   padding-left: 60px;
+   padding-top: 10px;
    padding-right: 5rem;
 }
 .nav-logo img{
-   max-height: 7rem;
+   max-height: 3rem;
 }
 
-label.logo {
-    color: #F9AB10;
-    font-size: 2rem;
-    line-height: 80px;
-    padding: 0 3rem;
-    font-weight: bold;
- }
-
- nav ul{
+.nav-links{
     float: right;
     margin-right: 1.2rem;
  }
 
- nav ul li{
+ .nav-links li{
     display: inline-block;
     line-height: 80px;
     margin: 0 0.5rem;
  }
 
- nav ul li a{
+ .nav-links a{
     color: #063941;
     font-size: 1rem;
     text-transform: uppercase;
@@ -86,9 +81,14 @@ label.logo {
     border-radius: 3px;
  }
 
- a.active,a:hover{
+ nav .nav-links a:active{
     background: #F9AB10;
     transition: .5s;
+ }
+
+ nav .nav-links a:hover{
+   background: #F9AB10;
+   transition: .5s;
  }
 
  .checkbtn{
@@ -114,7 +114,7 @@ label.logo {
  }
 
  .header__title{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: #063941;
     margin-bottom: 1rem;
@@ -154,7 +154,7 @@ label.logo {
    justify-content: right;
    align-items: center;
    max-width: 28rem;
-   padding-top: 2rem;
+   margin-top: 2rem;
  }
 
  .header__pic img{
@@ -165,6 +165,8 @@ label.logo {
 
  .pillars{
    background-color: #f5f5f5;
+   max-width: 1400px;
+   margin: auto;
  }
 
 
@@ -210,6 +212,11 @@ label.logo {
     font-size: 0.9rem;
  }
 
+ .showcase-container{
+   max-width: 1400px;
+   margin: auto;
+ }
+
  .showcase-titles{
     width: 100%;
     padding: 2rem 0;
@@ -249,6 +256,19 @@ label.logo {
    background-color: #f5f5f5;
  }
 
+ .screens-container .owl-carousel .owl-item img{
+   max-width: 220px;
+   max-height: 444px;
+ }
+
+ .screens-container .owl-item.active .screens{
+   transform: scale(0.8);
+ }
+
+ .screens-container .owl-item.active.center .screens{
+   transform: scale(1);
+ }
+
  .screens{
    
    display: flex;
@@ -260,8 +280,7 @@ label.logo {
  }
 
  .screens img{
-   height: 100%;
-   width: auto;
+   width: 100%;
    padding-bottom: 20px;
  }
 
@@ -272,44 +291,13 @@ label.logo {
  }
 
  .screens p{
-   width: 200px;
+   max-width: 200px;
    margin: 10px 0;
    font-size: 15px;
    padding-bottom: 20px;
  }
 
- 
- .app-showcase{
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 0 8%;
-    margin-bottom: 30px;
-   
- }
 
-.app-showcase h3{
-    font-size: 1rem;
-    font-weight: 500;
-    color: #07C5B5;
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.app-showcase p{
-    display: inline-block;
-    padding: 0 1rem;
-    text-align: center;
-    font-size: 1rem;
-    margin: 1rem;
-    color: #657575;
-}
-.app-showcase img{
-    max-width: 230px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
 
  .owl-Carousel{
     position: absolute;
@@ -318,10 +306,15 @@ label.logo {
     
  }
 
+ .downloads-container{
+   max-width: 1400px;
+   margin: auto;
+ }
+
  .download-tabs{
     width: 100%;
     max-height: 230px;
-    background-color: #07C5B5;
+    background-color: #063941;
     margin-left: auto;
     margin-right: auto;
  }
@@ -329,7 +322,7 @@ label.logo {
     font-size: 1.3rem;
     padding: 1.3rem 0;
     font-weight: 500;
-    color: #063941;
+    color: #F9AB10;
     text-align: center;
  }
 
@@ -346,50 +339,68 @@ label.logo {
     text-decoration: none;
     margin-right: 20px;
     border-radius: 6px;
-    background-color: #063941;
+    background-color: #F9AB10;
     font-size: 1.1rem;
  }
 
- .why-us{
+ .why-us-container{
+   max-width: 1400px;
+   margin: auto;
+   background-color: #f5f5f5;
+ }
+
+ .why-us, .why-us-2{
     display: flex;
-    padding: 0 11%;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
     padding-bottom: 3rem;
-    background-color: #f5f5f5;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    margin: auto;
+    
+ }
+
+
+ .testimonials__pic {
+    max-width: 21rem;
     
  }
 
  .testimonials__pic img{
-    max-width: 350px;
+   max-width: 100%;
  }
+
  .testimonials p{
-    max-width: 350px;
+    max-width: 21rem;
     font-size: 1rem;
     color: #657575;
     font-size: 0.9rem;
+    text-align: justify;
     
  }
 
  .testimonials-p2{
     color: #657575;
-    text-align: right;
+    text-align: justify;
  }
 
  .testimonials-p2 p{
-   max-width: 350px;
+   max-width: 21rem;
    font-size: 1rem;
    margin-left: auto;
    font-size: 0.9rem;
  }
 
- .Merchant-signup{
+ .merchant-container{
     background-color: #F9AB10;
-    width: 100%;
+    max-width: 1400px;
+    margin: auto;
     max-height: 12rem;
  }
+.merchant-container .btn button{
+   background-color: #063941;
+   color: #fff;
+}
 
  .merchant-title h2{
     text-align: center;
@@ -412,15 +423,17 @@ label.logo {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 6px;
-    background-color: #063941;
+    background-color: #F9AB10;
     font-size: 1.1rem;
-    color: #fff;
+    color: #063941;
     border: none;
     cursor: pointer;
  }
 
  .partners-container{
    background-color: #f5f5f5;
+   max-width: 1400px;
+   margin: auto;
  }
 
  .our-partners{
@@ -428,15 +441,6 @@ label.logo {
     justify-content: center;
  }
 
- .our-partners img{
-    display: block;
-    width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 3rem;
-    align-items: center;
-
- }
 
  .partner-call{
     font-size: 1.1rem;
@@ -447,10 +451,14 @@ label.logo {
     padding-top: 1rem;
  }
 
-
+footer{
+   max-width: 1400px;
+   margin: auto;
+}
 
  footer .container{
     background-color: #063941;
+    border-radius: 50px 50px 0 0;
  }
 
  .footer-logo{
@@ -464,19 +472,27 @@ label.logo {
 
  .row-f{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 40px 100px;
     color: #fff;
+    justify-content: space-around;
+ }
+
+
+ .footer-col{
+   max-width: 20%;
+   margin: 0.5rem;
  }
 
  .footer-col ul{
     list-style: none;
+    display: block;
  }
 
  .footer-col h4{
     color: #fff;
     margin-bottom: 25px;
-    font-size: 22px;
+    font-size: 1.3rem;
     position: relative;
  }
 
@@ -489,47 +505,54 @@ label.logo {
     margin-top: 30px;
  }
 
- .footer-col ul li{
-    padding: 10px 0;
+ .footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
  }
 
  .footer-col ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    opacity: 0.7;
-    transition: 0.5s;
+	font-size: 1rem;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
  }
 
  .footer-col ul li a:hover{
-    opacity: 1;
+	color: #ffffff;
+	padding-left: 8px;
  }
+
+ 
+
  .footer-col input{
     border: none;
-    width: 250px;
+    width: 200px;
     height: 45px;
     display: block;
     padding-left: 20px;
     margin: 14px 0;
+    border-radius: 6px;
  }
 
- .footer-col ul .inputsubmit{
+ .footer-col form .inputsubmit{
     padding: 0px 20px;
     background-color: #F9AB10;
     border: none;
     color: #fff;
+    
  }
 
  .footer-col p{
-   width: 250px;
+   max-width: 250px;
  }
 
 
 
 
 
-
-
+/** Media Querries Begin Here**/
 
 
 
@@ -537,26 +560,16 @@ label.logo {
 
  
  
- @media only screen and (max-width: 1220px){
-   .header__title h1{
+ @media (max-width: 1100px){
+
+   .header__title{
       font-size: 1.5rem;
    }
- }
- 
-
- @media (max-width: 952px){
-    
-    nav ul li a{
-        font-size: 1rem;
-    }
- }
-
- @media (max-width: 852px){
-    .checkbtn{
+   .checkbtn{
         display: block;
     }
 
-    ul{
+    .nav-links{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -567,23 +580,149 @@ label.logo {
         text-align: center;
         transition: all 0.5s;
     }
-    nav ul li{
+    .nav-links{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav ul li a{
+    .nav-links a{
         font-size: 20px;
     }
-    a:hover,a.active{
-        background: none;
-        color: #F9AB10;
-    }
+    
     #check:checked ~ ul{
         left: 0;
     }
  }
 
+
+ @media (max-width: 880px){
+
+   .header{
+      grid-gap: 4rem;
+   }
+   .footer-col ul li a{
+      font-size: 0.8rem;
+   }
+   .footer-col p{
+      font-size: 0.9rem;
+   }
+
+   .footer-col h4{
+      font-size: 1.2rem;
+   }
+
+   .footer-col input{
+      width: 150px;
+      height: 30px;
+      font-size: 0.8rem;
+   }
+
+   .row-f{
+      padding: 20px 80px;
+   }
+
+   .footer-logo img{
+      max-height: 80px;
+   }
+
+   .box{
+      padding: 0.5rem;
+   }
+
+   .pillars__container{
+      padding: 15px 6%;
+   }
+
+ }
+
+ @media (max-width: 786px){
+   .header{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+   }
+
+   .pillars__container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+
+   .box{
+      min-width: 250px;
+   }
+
+   .showcase-titles{
+      padding:0 30px;
+   }
+
+   .large-title h2{
+      font-size: 1.2rem;
+   }
+
+   .download-title h2{
+      font-size: 1.1rem;
+   }
+
+   .download-content p{
+      font-size: 1rem;
+      padding-bottom: 0.8rem;
+   }
+
+   .download-tabs{
+      padding: 0 30px;
+   }
+
+   .why-us-container{
+      padding-top: 20px;
+   }
+
+   .why-us{
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 1rem;
+      align-items: center;
+      text-align: center;
+   }
+
+   .why-us-2{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      text-align: center;
+   }
+
+   .testimonials-p2 h1{
+      text-align: center;
+   }
+
+   .merchant-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .partners-container{
+      padding-top: 20px;
+   }
+
+   .partners-container .large-title h2{
+      font-size: 1.1rem;
+   }
+
+   .row-f{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .footer-col{
+      min-width: 250px;
+   }
+ }
 
 
 

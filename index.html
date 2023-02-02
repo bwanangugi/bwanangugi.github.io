@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets\css\owl.theme.default.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="nav-container">
@@ -20,17 +20,17 @@
             <div class="nav-logo">
                 <img src="assets\images\brij-X-_Logo.png" alt="">
             </div>
-            <ul class="nav-links">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">How To</a></li>
-                <li><a href="#">Why Us</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fa-solid fa-bars"></i>
             </label>
+            <ul class="nav-links">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#how">How To</a></li>
+                <li><a href="#why">Why Us</a></li>
+                <li><a href="#partner">Partners</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </div>
 
@@ -49,9 +49,9 @@
                 </div>
                 <div class="header-buttons">
                     <button class="header__btn">
-                        <a href="https://play.google.com/store/apps/details?id=com.brij.android&hl=en&gl=US">Swap Now</a>
+                        <a href="https://www.brij.money/">Swap Now</a>
                     </button>
-                    <a href="">Learn More</a>
+                    <a href="#how">Learn More</a>
                 </div>
             </div>
             <div class="header__pic">
@@ -94,7 +94,7 @@
         <div class="showcase-container">
 
             <div class="showcase-titles">
-                <div class="small-title">
+                <div class="small-title" id="how">
                     <h3>How it Works</h3>
                 </div>
                 <div class="large-title">
@@ -170,7 +170,7 @@
 
         
             <div class="showcase-titles">
-                <div class="small-title">
+                <div class="small-title" id="why">
                     <h3>
                         Why BrijX?
                     </h3>
@@ -279,7 +279,7 @@
         
         <div class="partners-container">
             <div class="showcase-titles">
-                <div class="small-title">
+                <div class="small-title" id="partner">
                     <h3>
                         Our Partners
                     </h3>
@@ -465,7 +465,7 @@
                     nav:false
                 },
                 1000:{
-                    items:5,
+                    items:6,
                     nav:false,
                     loop:true
                 },

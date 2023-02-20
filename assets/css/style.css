@@ -18,6 +18,10 @@ main{
     height: 100vh;
 }
 
+p{
+    font-weight: 200;
+}
+
 
 .header-container{
     display: flex;

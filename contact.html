@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap X</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/4d792c5e38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets\css\owl.carousel.min.css">
+    <link rel="stylesheet" href="assets\css\owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <div class="nav-logo">
+                <a href="/index.html"><img src="assets\images\brij-X-_Logo.png" alt=""></a>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a class="active" href="/index.html">Home</a></li>
+                <li><a href="/index.html#how">How To</a></li>
+                <li><a href="/index.html#why">Why Us</a></li>
+                <li><a href="/index.html#partner">Partners</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header-container">
+        <div class="header">
+            <div class="textbox">
+                <div>
+                    <h1 class="header__title">
+                        Do you have any enquiries?
+                    </h1>
+                </div>
+                <div>
+                    <p class="header__text">
+                        Kenya Office - Headquarters: Riverside Square, 11th Floor, Off Riverside Drive, Nairobi - Kenya. East Africa.
+                        Email address: kenyasupport@bridgeinnovation.io
+                        Tel: +254 020 213 1729
+                    </p>
+                </div>
+                
+            </div>
+                <div class="contact-form">
+                    <h4>Send us a message</h4>
+                    <form action="">
+                        <input type="text" placeholder="Your Name" class="inputname">
+                        <input type="text" placeholder="Your email" class="inputemail">
+                        <input type="text" placeholder="Your message" class="inputemail">
+                        <input type="text" value="SUBMIT" class="inputsubmit">
+                    </form>
+                </div> 
+            
+        </div>
+
+    </div>
+        
+
+        <footer>
+            <div class="container">
+
+                <div class="footer-logo">
+                    <img src="assets\images\brij-X-_Logo-white.png" alt="">
+                </div>
+                
+                <div class="row-f">
+                    <!--1st footer col-->
+                    <div class="footer-col">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="">Paybills</a></li>
+                            <li><a href="">Send & request</a></li>
+                            <li><a href="">Merchants</a></li>
+                        </ul>
+                    </div>
+                    <!--2nd footer col-->
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <!--3rd footer col-->
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">We're hiring</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Chargeback</a></li>
+                            <li><a href="">Refunds</a></li>
+                        </ul>
+                    </div>
+                    <!--4th footer col-->
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <!--5th footer col-->
+                    <div class="footer-col">
+                        <h4>Newsletter</h4>
+                        <p>
+                        Get regular product
+                        features, and company
+                        updates, delivered in
+                        your inbox.
+                        </p>
+                        <form action="">
+                            <input type="text" placeholder="Your Name" class="inputname">
+                            <input type="text" placeholder="Your email" class="inputemail">
+                            <input type="text" value="SUBMIT" class="inputsubmit">
+                        </form>
+                    </div> 
+
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+
+    
+
+
+    
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="assets\js\owl.carousel.min.js"></script>
+    <script>
+        $('.owl-one').owlCarousel({
+            center: true,
+            loop:true,
+            margin:10,
+            autoHeight:true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                600:{
+                    items:1,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:false,
+                    loop:true
+                },
+            }
+        })
+        
+        $('.owl-two').owlCarousel({
+            loop:true,
+            margin:10,
+            autoWidth:false,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:6,
+                    nav:false,
+                    loop:true
+                },
+            }
+        })
+    </script>
+</body>
+</html>
